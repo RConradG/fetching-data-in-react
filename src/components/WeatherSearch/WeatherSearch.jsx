@@ -5,7 +5,7 @@ const WeatherSearch = (props) => {
 
   const handleSubmit = (e) => {
     e. preventDefault();
-
+    props.fetchData(city);
     // TODO: call teh service show function here
     // clear form input
     setCity('');
